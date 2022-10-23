@@ -8,5 +8,5 @@ def busca_recursiva(arr,numb,end = None, start = 0):
     if numb == arr[meio]:
         return meio
     if numb < arr[meio]:
-        return busca_recursiva(arr, numb, mid-1 , start)
-    return busca_recursiva(arr, numb, end, mid+1)
+        return busca_recursiva(arr, numb, meio-1 , start)
+    return busca_recursiva(arr, numb, end, meio+1)
